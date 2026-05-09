@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Github, 
@@ -299,7 +300,7 @@ export default function PortfolioApp() {
               Redefined.
             </h1>
             <p className="text-lg text-muted max-w-xl mb-8 leading-relaxed">
-              Hi, I'm <span className="text-foreground font-semibold">Uttam Kumar Roy</span>. 
+              Hi, I&apos;m <span className="text-foreground font-semibold">Uttam Kumar Roy</span>. 
               A MERN stack specialist crafting high-performance, accessible, and 
               scalable full-stack applications with modern architecture.
             </p>
@@ -329,7 +330,13 @@ export default function PortfolioApp() {
             <div className="relative z-10 glass p-8 rounded-3xl border-brand/10 shadow-2xl shadow-brand/5">
               <div className="flex items-center gap-4 mb-8">
                 <div className="relative w-14 h-14 rounded-2xl overflow-hidden bg-accent ring-2 ring-brand/20 p-0.5">
-                   <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Uttam" alt="Profile" className="w-full h-full object-cover rounded-xl bg-background" />
+                   <Image 
+                     src="https://api.dicebear.com/7.x/avataaars/svg?seed=Uttam" 
+                     alt="Profile" 
+                     fill
+                     className="w-full h-full object-cover rounded-xl bg-background" 
+                     referrerPolicy="no-referrer"
+                   />
                 </div>
                 <div>
                   <h3 className="font-bold text-foreground">Uttam Kumar Roy</h3>
@@ -451,10 +458,10 @@ export default function PortfolioApp() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-20 items-start">
             <div className="sticky top-32">
-              <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight tracking-tight">Let's build <br /> <span className="text-brand">Something Great.</span></h2>
+              <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight tracking-tight">Let&apos;s build <br /> <span className="text-brand">Something Great.</span></h2>
               <p className="text-muted mb-12 max-w-sm leading-relaxed text-lg">
-                I'm currently looking for new opportunities and high-impact collaborations. 
-                Have a clear vision or just a starting point? Let's connect.
+                I&apos;m currently looking for new opportunities and high-impact collaborations. 
+                Have a clear vision or just a starting point? Let&apos;s connect.
               </p>
               
               <div className="space-y-6">
